@@ -16,9 +16,7 @@ public:
     }
     ~Roller()
     {
-        free(&tankgroesse);
-        free(&kilometerstand);
-        free(&tankinhalt);
+        
     }
     bool tankeDenRoller(double menge)
     {

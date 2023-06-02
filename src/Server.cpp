@@ -21,8 +21,6 @@ void StudentControllerFunction(crow::SimpleApp *server){
 void runServer(int port){
     crow::SimpleApp app;
     StudentControllerFunction(&app);
-    Roller roller(3.0,5,7.0);
-    std::cout << roller.getKilometerStand() << std::endl;
     app.port(port).multithreaded().run();
     
 }

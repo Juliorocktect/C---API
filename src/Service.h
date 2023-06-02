@@ -5,4 +5,4 @@ namespace service{
     int devide(int one,int two);
 }
 
-#endif SERVICE_H
+#endif 

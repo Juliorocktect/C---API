@@ -7,12 +7,13 @@
 class Besitzer{
     private:
         double geld;
-        string name;
+        std::string name;
         Roller roller;
         const double literpreis;
     public:
-        Besitzer(double geld,string name,double tankgroesse,int kilometerstand,double tankinhalt);
+        Besitzer(double geld,std::string name,double tankgroesse,int kilometerstand,double tankinhalt);
         ~Besitzer();
-    void fahreDeinenRoller(int strecke);   
+    void fahreDeinenRoller(int strecke);
+    Roller getRoller();
 };
-#endif BESITZER_H
+#endif

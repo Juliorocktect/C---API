@@ -1,4 +1,4 @@
 #include "../header/crow_all.h"
-#include "./Server.cpp"
+#pragma once
 
 void runServer(int port);

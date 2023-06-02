@@ -1,9 +1,13 @@
-#include "./server.h"
+#include "Server.h"
 #include "Besitzer.h"
+#include "Service.h"
+#include "Roller.h"
+#include <string>
+#include <iostream>
 
 int main()
 {
     //runServer(8080);
-    Besitzer besitzer(50.0,"Lutz",15.0,10,12.0);
-    besitzer
+    Roller roller(2.0,2,2.0);
+    std::cout << roller.getTankinhalt() << std::endl;
 }

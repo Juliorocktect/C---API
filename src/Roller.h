@@ -1,13 +1,14 @@
+#pragma once
 #include <string>
 #include <iostream>
-#include "Roller.cpp"
 
 class Roller{
     private:
-            double tankgroesse, tankinhalt;
+            double tankgroesse;
             int kilometerstand;
+            double tankinhalt;
     public: 
-        Roller(double,int,double);
+        Roller(double tankgroesse,int kilometerstand,double tankinhalt);
         ~Roller();
         bool tankeDenRoller(double menge);
         void fahre(int strecke);
